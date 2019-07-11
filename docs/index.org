@@ -1,0 +1,35 @@
+#+OPTIONS: author:nil date:nil <:nil creator:nil num:nil toc:nil html-preamble:nil html-postamble:nil
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="index.css" />
+#+HTML_HEAD: <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+
+* sacred color theme
+[[file:screenshots/sacred-theme-small.gif]]
+
+[[https://github.com/matthias-margush/sacred-theme][source code]] ~ [[https://matthias-margush.github.io/sacred-theme/index.html][home page]]
+
+* installation
+#+begin_src emacs-lisp
+  (package-install 'sacred-theme)
+
+  ;; dark
+  (load-theme 'sacredforest t)
+
+  ;; light
+  (load-theme 'sacredpaper t)
+#+end_src
+
+* palette
+** light
+[[file:/screenshots/light.png]]
+
+** shadow
+[[file:screenshots/shadow.png]]
+
+** sun ~ water ~ fire
+[[file:screenshots/elements.png]]
+
+** moss ~ bark ~ soil
+[[file:screenshots/earth.png]]
+
+* inspiration
+[[https://github.com/KKPMW/sacredforest-vim][sacredforest-vim]] ~ [[https://github.com/nylki/pen-paper-coffee-syntax][pen-paper-coffee-syntax]] ~ [[https://www.nordtheme.com][nord]]

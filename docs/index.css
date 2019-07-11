@@ -1,0 +1,145 @@
+body {
+    /* background: linear-gradient(90deg, #3C4C55 50%, #FFFAF2 50%); */
+}
+
+.dark {
+    color: #3C4c55;
+}
+
+.light {
+    color: #FFFAF2;
+}
+
+.sun {
+    color: #D8D915;
+}
+
+.fire {
+    color: #D86C6C;
+}
+
+.water {
+    color: #77A0A9;
+}
+
+.moss {
+    color: #A0BA8A;
+}
+
+.bark {
+    color: #6a5C56;
+}
+
+.soil {
+    color: #B2A488;
+}
+
+.deemphasized {
+    color: #687A8D;
+}
+
+a {
+    color: #77A0A9;
+}
+
+.title {
+    clear: both;
+    color: #3C4C55;
+    font-family: Comfortaa, Helvetica, Sans-serif;
+    padding-top: 48px;
+}
+
+.figure {
+    padding: 0;
+}
+
+pre {
+    font-family: monospace;
+    border: none;
+    box-shadow: none;
+}
+
+.outline-2 {
+    clear: both;
+    color: #687A8D;
+    text-align: center;
+    font-family: Comfortaa, Helvetica, Sans-serif;
+    padding-top: 30px;
+    padding-bottom: 0;
+}
+
+.palette {
+    /* color: #6A5C56; */
+    /* text-align: center; */
+    /* width: 100%; */
+    /* font-family: Comfortaa, Helvetica, Sans-serif; */
+    /* height: 150px; */
+    /* padding-top: 10px; */
+    /* padding-bottom: 50px; */
+    /* background: #F5F5F5; */
+}
+
+.outline-text-2 {
+    clear: both;
+    margin: 0 auto;
+    width: 640px;
+    padding-bottom: 0;
+}
+
+.swatch-dark {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 1px 1px 0 rgba(0, 0, 0, 0.01);
+    background: #1C2C35;
+}
+
+.swatch-light {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 10px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.08), 0 1px 1px 0 rgba(0, 0, 0, 0.01);
+    background: white;
+}
+
+.swatch-color {
+    width: 150px;
+    border-radius: 10px;
+    height: 150px;
+    background: #F5F5F5;
+}
+
+.swatch-label-dark {
+    /* clear: both; */
+    width: 150px;
+    height: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+.swatch-label-light {
+    /* clear: both; */
+    width: 150px;
+    height: 20px;
+    margin-top: 10px;
+    color: black;
+}
+
+.screenshot {
+    display: block;
+    margin-top: 50px;
+    width: 600px;
+    margin-left: 30px;
+    margin-right: auto;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
