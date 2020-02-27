@@ -109,8 +109,10 @@
    `(header-line ((t (:background ,sacred-theme--background :foreground ,sacred-theme--good))))
    `(escape-glyph ((t (:foreground ,sacred-theme--link))))
 
+   `(highlight-indentation-face ((t (:background ,sacred-theme--light-dark))))
+
    ;; mode line
-   `(mode-line ((t (:background ,sacred-theme--background-dark :foreground ,sacred-theme--inverted-background :box nil :underline nil :weight normal :inverse-video nil))))
+   `(mode-line ((t (:background ,sacred-theme--background :foreground ,sacred-theme--inverted-background :box nil :underline nil :weight normal :inverse-video nil))))
    `(mode-line-inactive ((t (:inherit mode-line))))
    `(mode-line-buffer-id ((t (:inherit mode-line))))
    `(mode-line-buffer-id-inactive ((t (:inherit mode-line-inactive))))
@@ -288,7 +290,9 @@
 
    ;; mu4e
    `(mu4e-header-highlight-background-face ((t (:inherit region :weight bold))))
-   `(mu4e-title-face ((t (:inherit outline-2 :weight bold))))
+   `(mu4e-title-face ((t (:foreground ,sacred-theme--text :weight bold))))
+   `(mu4e-highlight-face ((t (:foreground ,sacred-theme--text :weight bold))))
+   `(mu4e-context-face ((t (:foreground ,sacred-theme--text :weight bold))))
 
    ;; neotree
    `(neo-banner-face ((t (:foreground ,sacred-theme--text :weight normal))))
@@ -312,7 +316,7 @@
    `(isearch ((t (:foreground ,sacred-theme--inverted-text :background ,sacred-theme--changed :weight bold))))
    `(isearch-lazy-highlight-background-face ((t (:foreground ,sacred-theme--inverted-text :background ,sacred-theme--changed))))
    `(lazy-highlight ((t (:foreground ,sacred-theme--inverted-text :background ,sacred-theme--changed))))
-   `(isearch-fail ((t (:background ,sacred-theme--changed :inherit font-lock-warning-face :inverse-video t))))
+   `(isearch-fail ((t (:foreground ,sacred-theme--alert))))
 
    ;; evil
    `(evil-search-highlight-background-persist-highlight-background-face ((t (:background ,sacred-theme--changed :inherit font-lock-warning-face :inverse-video t))))
@@ -450,7 +454,7 @@
    `(csv-separator-face ((t (:foreground ,sacred-theme--keyword))))
 
    `(diff-added ((t (:foreground ,sacred-theme--highlight-background))))
-   `(diff-changed ((t (:foreground ,sacred-theme--link))))
+   `(diff-changed ((t (:foreground ,sacred-theme--changed))))
    `(diff-removed ((t (:foreground ,sacred-theme--keyword))))
    `(diff-header ((t (:background ,sacred-theme--text :foreground ,sacred-theme--background))))
    `(diff-file-header ((t (:background ,sacred-theme--text :foreground ,sacred-theme--background))))
@@ -459,9 +463,9 @@
    `(diff-refine-changed ((t (:background ,sacred-theme--changed :foreground ,sacred-theme--inverted-text))))
    `(diff-refine-removed ((t (:background ,sacred-theme--removed :foreground ,sacred-theme--inverted-text))))
 
-   `(diff-hl-change ((t (:foreground ,sacred-theme--link))))
-   `(diff-hl-delete ((t (:foreground ,sacred-theme--keyword))))
-   `(diff-hl-insert ((t (:foreground ,sacred-theme--highlight-background))))
+   `(diff-hl-change ((t (:foreground "blue3" :background ,sacred-theme--changed))))
+   `(diff-hl-delete ((t (:foreground "red3" :background ,sacred-theme--removed))))
+   `(diff-hl-insert ((t (:foreground "green4" :background ,sacred-theme--added))))
 
    `(ediff-even-diff-A ((t (:foreground nil :background nil :inverse-video t))))
    `(ediff-even-diff-B ((t (:foreground nil :background nil :inverse-video t))))
@@ -933,12 +937,12 @@
 (defun sacred-theme-forest ()
   "Enable the sacred-forest theme."
   (interactive)
-  (load-theme 'sacredforest t))
+  (enable-theme 'sacredforest))
 
 (defun sacred-theme-paper ()
   "Enable the sacred-paper theme."
   (interactive)
-  (load-theme 'sacredpaper t))
+  (enable-theme 'sacredpaper))
 
 (provide 'sacred-theme)
 
