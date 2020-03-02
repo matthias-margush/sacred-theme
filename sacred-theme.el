@@ -117,6 +117,7 @@
    `(mode-line-buffer-id ((t (:inherit mode-line))))
    `(mode-line-buffer-id-inactive ((t (:inherit mode-line-inactive))))
    `(mode-line-emphasis ((t (:inherit mode-line :weight bold))))
+   `(vertical-border ((t (:background ,sacred-theme--background :foreground ,sacred-theme--inverted-background :box nil :underline nil :weight normal :inverse-video nil))))
    `(eyebrowse-mode-line-inactive ((t (:background ,sacred-theme--background :foreground ,sacred-theme--keyword :box nil :weight normal :inverse-video t))))
    `(eyebrowse-mode-line-separator ((t (:background ,sacred-theme--background :foreground ,sacred-theme--keyword :box nil :weight normal :inverse-video t))))
    `(eyebrowse-mode-line-delimiters ((t (:background ,sacred-theme--background :foreground ,sacred-theme--keyword :box nil :weight normal :inverse-video t))))
